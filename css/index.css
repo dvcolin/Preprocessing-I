@@ -29,6 +29,13 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 600;
   font-display: swap;
   src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
@@ -221,8 +228,8 @@ body {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 8.2rem;
-  padding-top: 4.8rem;
+  padding: 4.8rem;
+  padding-right: 8.6rem;
 }
 @media (max-width: 500px) {
   .main-section-layout {
@@ -344,8 +351,8 @@ main .about {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 8.2rem;
-  padding-top: 4.8rem;
+  padding: 4.8rem;
+  padding-right: 8.6rem;
 }
 @media (max-width: 500px) {
   main .about {
@@ -439,8 +446,8 @@ main .skills {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 8.2rem;
-  padding-top: 4.8rem;
+  padding: 4.8rem;
+  padding-right: 8.6rem;
 }
 @media (max-width: 500px) {
   main .skills {
@@ -505,8 +512,8 @@ main .work {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 8.2rem;
-  padding-top: 4.8rem;
+  padding: 4.8rem;
+  padding-right: 8.6rem;
 }
 @media (max-width: 500px) {
   main .work {
@@ -537,17 +544,6 @@ main .work .work-history .work-card .employer-name {
   font-weight: 500;
   font-size: 4.5rem;
 }
-main .work .work-history .work-card .employer-name i {
-  margin-left: 2.4rem;
-}
-@media (max-width: 500px) {
-  main .work .work-history .work-card .employer-name i {
-    display: none;
-  }
-}
-main .work .work-history .work-card .employer-name .fa-google {
-  font-size: 3.8rem;
-}
 @media (max-width: 500px) {
   main .work .work-history .work-card .employer-name {
     color: #2c365e;
@@ -570,9 +566,11 @@ main .work .work-history .work-card .work-title {
 }
 main .work .work-history .work-card .work-dates {
   position: absolute;
-  font-size: 5rem;
+  font-size: 4rem;
   right: 6.4rem;
   bottom: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 @media (max-width: 500px) {
   main .work .work-history .work-card .work-dates {
@@ -609,8 +607,8 @@ main .contact {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 8.2rem;
-  padding-top: 4.8rem;
+  padding: 4.8rem;
+  padding-right: 8.6rem;
 }
 @media (max-width: 500px) {
   main .contact {
@@ -644,12 +642,13 @@ main .contact .contact-info .contact-method .contact-type {
   }
 }
 main .contact .contact-info .contact-method .contact-personal {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #1c1d21;
   font-size: 4rem;
   text-transform: lowercase;
   margin-top: 2.4rem;
   width: 100%;
+  font-weight: 500;
 }
 @media (max-width: 500px) {
   main .contact .contact-info .contact-method .contact-personal {
