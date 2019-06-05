@@ -407,7 +407,7 @@ main .about .about-button {
   border: 1px solid #9197ae;
   border-radius: 7px;
   color: #9197ae;
-  margin: 1.8rem 0;
+  margin: 1.2rem 0;
   transition: color 250ms ease-out;
   transition: background 200ms ease-out;
 }
