@@ -221,8 +221,8 @@ body {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 6.4rem;
-  padding-top: 24px;
+  padding: 8.2rem;
+  padding-top: 4.8rem;
 }
 @media (max-width: 500px) {
   .main-section-layout {
@@ -336,7 +336,7 @@ body {
     display: none;
   }
 }
-.main {
+main .about {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -344,34 +344,30 @@ body {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 6.4rem;
-  padding-top: 24px;
+  padding: 8.2rem;
+  padding-top: 4.8rem;
 }
 @media (max-width: 500px) {
-  .main {
+  main .about {
     width: 90%;
     margin: 0 auto;
     min-height: auto;
     padding: 3.2rem;
   }
 }
-.main .about {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.main .about .about-name {
+main .about .about-name {
   font-size: 13rem;
   color: #2c365e;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 @media (max-width: 800px) {
-  .main .about .about-name {
+  main .about .about-name {
     font-size: 5rem;
+    margin: 0.8rem 0;
   }
 }
-.main .about .about-job-title {
+main .about .about-job-title {
   font-family: "Varela Round", sans-serif;
   text-transform: uppercase;
   font-size: 3.6rem;
@@ -380,29 +376,29 @@ body {
   color: #1c1d21;
 }
 @media (max-width: 500px) {
-  .main .about .about-job-title {
+  main .about .about-job-title {
     font-size: 2.4rem;
     padding: 1.6rem;
     line-height: 3rem;
   }
-  .main .about .about-job-title .dash {
+  main .about .about-job-title .dash {
     display: none;
   }
 }
-.main .about .about-paragraph {
+main .about .about-paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 2.3rem;
-  line-height: 2.6rem;
+  line-height: 3rem;
   width: 75%;
   margin: 2.4rem 0;
 }
 @media (max-width: 500px) {
-  .main .about .about-paragraph {
+  main .about .about-paragraph {
     font-size: 1.6rem;
     margin: 2.4rem auto;
   }
 }
-.main .about .about-button {
+main .about .about-button {
   background: none;
   padding: 1.8rem 3.6rem;
   font-family: "Varela Round", sans-serif;
@@ -415,41 +411,27 @@ body {
   transition: color 250ms ease-out;
   transition: background 200ms ease-out;
 }
-.main .about .about-button:hover {
+main .about .about-button:hover {
   background: #2c365e;
   color: white;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .main .about .about-button {
+  main .about .about-button {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  .main .about {
+  main .about {
     height: auto;
   }
 }
 @media (max-width: 500px) {
-  .main {
-    text-align: center;
-    padding: 1.6rem;
-    min-height: auto;
-  }
-}
-.section-header {
-  font-size: 7.5rem;
-  font-family: "Varela Round", sans-serif;
-  text-transform: uppercase;
-}
-@media (max-width: 500px) {
-  .section-header {
-    font-size: 5rem;
-    width: 100%;
+  main .about {
     text-align: center;
   }
 }
-.skills {
+main .skills {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -457,18 +439,18 @@ body {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 6.4rem;
-  padding-top: 24px;
+  padding: 8.2rem;
+  padding-top: 4.8rem;
 }
 @media (max-width: 500px) {
-  .skills {
+  main .skills {
     width: 90%;
     margin: 0 auto;
     min-height: auto;
     padding: 3.2rem;
   }
 }
-.skills .skills-items {
+main .skills .skills-items {
   width: 95%;
   height: 100%;
   margin: 0 auto;
@@ -478,21 +460,21 @@ body {
   justify-content: space-around;
   color: #1c1d21;
 }
-.skills .skills-items i {
+main .skills .skills-items i {
   font-size: 12rem;
   color: #1c1d21;
 }
 @media (max-width: 500px) {
-  .skills .skills-items i {
+  main .skills .skills-items i {
     font-size: 5rem;
   }
 }
-.skills .skills-items .skills-item {
+main .skills .skills-items .skills-item {
   text-align: center;
   width: 30%;
   margin-bottom: 6.4rem;
 }
-.skills .skills-items .skills-item .skills-title {
+main .skills .skills-items .skills-item .skills-title {
   font-size: 4.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -500,22 +482,22 @@ body {
   margin-top: 3.2rem;
 }
 @media (max-width: 500px) {
-  .skills .skills-items .skills-item .skills-title {
+  main .skills .skills-items .skills-item .skills-title {
     font-size: 4rem;
   }
 }
 @media (max-width: 500px) {
-  .skills .skills-items .skills-item {
+  main .skills .skills-items .skills-item {
     width: 80%;
     margin: 3.2rem 0;
   }
 }
 @media (max-width: 500px) {
-  .skills .skills-items {
+  main .skills .skills-items {
     margin-top: 1.6rem;
   }
 }
-.work {
+main .work {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -523,18 +505,18 @@ body {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 6.4rem;
-  padding-top: 24px;
+  padding: 8.2rem;
+  padding-top: 4.8rem;
 }
 @media (max-width: 500px) {
-  .work {
+  main .work {
     width: 90%;
     margin: 0 auto;
     min-height: auto;
     padding: 3.2rem;
   }
 }
-.work .work-history {
+main .work .work-history {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -542,39 +524,39 @@ body {
   height: 75%;
   width: 100%;
 }
-.work .work-history .work-card {
+main .work .work-history .work-card {
   position: relative;
   width: 100%;
   margin: 3.2rem 0;
   height: 12rem;
   border-bottom: 1px solid #1c1d21;
 }
-.work .work-history .work-card .employer-name {
+main .work .work-history .work-card .employer-name {
   color: #2c365e;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 4.5rem;
 }
-.work .work-history .work-card .employer-name i {
+main .work .work-history .work-card .employer-name i {
   margin-left: 2.4rem;
 }
 @media (max-width: 500px) {
-  .work .work-history .work-card .employer-name i {
+  main .work .work-history .work-card .employer-name i {
     display: none;
   }
 }
-.work .work-history .work-card .employer-name .fa-google {
+main .work .work-history .work-card .employer-name .fa-google {
   font-size: 3.8rem;
 }
 @media (max-width: 500px) {
-  .work .work-history .work-card .employer-name {
+  main .work .work-history .work-card .employer-name {
     color: #2c365e;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 3.5rem;
   }
 }
-.work .work-history .work-card .work-title {
+main .work .work-history .work-card .work-title {
   font-family: "Varela Round", sans-serif;
   color: #1c1d21;
   text-transform: uppercase;
@@ -582,18 +564,18 @@ body {
   font-size: 2.5rem;
 }
 @media (max-width: 500px) {
-  .work .work-history .work-card .work-title {
+  main .work .work-history .work-card .work-title {
     font-size: 1.7rem;
   }
 }
-.work .work-history .work-card .work-dates {
+main .work .work-history .work-card .work-dates {
   position: absolute;
   font-size: 5rem;
   right: 6.4rem;
   bottom: 2.4rem;
 }
 @media (max-width: 500px) {
-  .work .work-history .work-card .work-dates {
+  main .work .work-history .work-card .work-dates {
     position: relative;
     right: auto;
     bottom: auto;
@@ -601,12 +583,12 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .work .work-history .work-card {
+  main .work .work-history .work-card {
     margin: 2.4rem 0;
   }
 }
 @media (max-width: 500px) {
-  .work .work-history {
+  main .work .work-history {
     height: auto;
     width: 100%;
     margin: 3.2rem auto;
@@ -614,7 +596,12 @@ body {
     line-height: 2.8rem;
   }
 }
-.contact {
+@media (max-width: 500px) {
+  main .work .work-history {
+    margin-top: 4.8rem;
+  }
+}
+main .contact {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -622,41 +609,41 @@ body {
   min-height: 100%;
   width: 80%;
   margin-left: 20%;
-  padding: 6.4rem;
-  padding-top: 24px;
+  padding: 8.2rem;
+  padding-top: 4.8rem;
 }
 @media (max-width: 500px) {
-  .contact {
+  main .contact {
     width: 90%;
     margin: 0 auto;
     min-height: auto;
     padding: 3.2rem;
   }
 }
-.contact .contact-info {
+main .contact .contact-info {
   height: 75%;
   margin-top: 6.4rem;
 }
-.contact .contact-info .contact-method {
+main .contact .contact-info .contact-method {
   width: 100%;
   height: 45%;
   margin-bottom: 8.4rem;
 }
-.contact .contact-info .contact-method .contact-type {
+main .contact .contact-info .contact-method .contact-type {
   color: #2c365e;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 @media (max-width: 500px) {
-  .contact .contact-info .contact-method .contact-type {
+  main .contact .contact-info .contact-method .contact-type {
     color: #2c365e;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 3.5rem;
   }
 }
-.contact .contact-info .contact-method .contact-personal {
+main .contact .contact-info .contact-method .contact-personal {
   font-family: "Varela Round", sans-serif;
   color: #1c1d21;
   font-size: 4rem;
@@ -665,36 +652,52 @@ body {
   width: 100%;
 }
 @media (max-width: 500px) {
-  .contact .contact-info .contact-method .contact-personal {
+  main .contact .contact-info .contact-method .contact-personal {
     font-size: 2.2rem;
   }
 }
-.contact .contact-icons {
+main .contact .contact-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 50%;
 }
-.contact .contact-icons .contact-link {
+main .contact .contact-icons .contact-link {
   color: #9197ae;
   padding: 1rem;
   transition: color 250ms ease-out;
 }
-.contact .contact-icons .contact-link:hover {
+main .contact .contact-icons .contact-link:hover {
   color: #2c365e;
 }
-.contact .contact-icons i {
+main .contact .contact-icons i {
   font-size: 5rem;
 }
 @media (max-width: 500px) {
-  .contact .contact-icons i {
+  main .contact .contact-icons i {
     font-size: 4rem;
   }
 }
 @media (max-width: 500px) {
-  .contact .contact-icons {
+  main .contact .contact-icons {
     width: 100%;
     margin-bottom: 6.4rem;
+  }
+}
+main .section-header {
+  font-size: 6rem;
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  main .section-header {
+    font-size: 5rem;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 1.4rem;
+    border-bottom: 2px solid #1c1d21;
+    margin: 0 auto;
   }
 }
 hr {
