@@ -1,1 +1,343 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #dfe7e6;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.nav-link-text {
+  font-size: 2rem;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+}
+.link-transition {
+  transition: color 250ms ease-out;
+}
+.header-font-style {
+  color: #2C365E;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.main-section-layout {
+  display: flex;
+  flex-direction: column;
+  background: #dfe7e6;
+  width: 80%;
+  margin-left: 20%;
+  padding: 6.4rem;
+  padding-top: 24px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #1C1D21;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  padding: 2.4rem;
+  height: 100%;
+  width: 20%;
+}
+.sidebar .sidebar-image {
+  background: url(../images/sidebar-img.jpeg);
+  background-size: cover;
+  width: 75%;
+  height: 20%;
+  margin: 2.4rem 0;
+  border-radius: 50%;
+}
+.sidebar .sidenav {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  width: 60%;
+  margin-top: auto;
+}
+.sidebar .sidenav .nav-link {
+  padding: 1rem;
+  text-decoration: none;
+  color: #9197AE;
+  transition: color 250ms ease-out;
+}
+.sidebar .sidenav .nav-link:hover {
+  color: white;
+}
+.sidebar .sidenav i.fa-github {
+  font-size: 4rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #dfe7e6;
+  width: 80%;
+  margin-left: 20%;
+  padding: 6.4rem;
+  padding-top: 24px;
+}
+.main .about {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main .about .about-name {
+  font-size: 13rem;
+  color: #2C365E;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.main .about .about-job-title {
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  padding: 3.2rem 0;
+  border-bottom: 2px solid #1C1D21;
+  color: #1C1D21;
+}
+.main .about .about-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  line-height: 2.6rem;
+  width: 75%;
+  margin: 2.4rem 0;
+}
+.main .about .about-button {
+  background: none;
+  padding: 1.8rem 3.6rem;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 1px solid #9197AE;
+  border-radius: 7px;
+  color: #9197AE;
+  margin: 1.8rem 0;
+  transition: color 250ms ease-out;
+  transition: background 200ms ease-out;
+}
+.main .about .about-button:hover {
+  background: #2C365E;
+  color: white;
+  cursor: pointer;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  background: #dfe7e6;
+  width: 80%;
+  margin-left: 20%;
+  padding: 6.4rem;
+  padding-top: 24px;
+}
+.skills .skills-items {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills .skills-items i {
+  font-size: 12rem;
+}
+.skills .skills-items .skills-item {
+  text-align: center;
+  width: 30%;
+}
+.skills .skills-items .skills-item .skills-title {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 3.2rem;
+}
+.skills .skills-items .skills-item-bottom {
+  margin-top: 10rem;
+}
+.section-header {
+  font-size: 7.5rem;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+}
