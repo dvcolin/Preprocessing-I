@@ -336,6 +336,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  color: #2C365E;
 }
 .skills .skills-items i {
   font-size: 12rem;
@@ -378,7 +379,7 @@ body {
   width: 100%;
   margin: 3.2rem 0;
   height: 12rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1C1D21;
 }
 .work .work-history .work-card .employer-name {
   color: #2C365E;
@@ -404,4 +405,56 @@ body {
   font-size: 5rem;
   right: 6.4rem;
   bottom: 2.4rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100%;
+  width: 80%;
+  margin-left: 20%;
+  padding: 6.4rem;
+  padding-top: 24px;
+}
+.contact .contact-info {
+  height: 75%;
+  margin-top: 6.4rem;
+}
+.contact .contact-info .contact-method {
+  width: 100%;
+  height: 45%;
+  margin-bottom: 8.4rem;
+}
+.contact .contact-info .contact-method .contact-type {
+  color: #2C365E;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 6rem;
+}
+.contact .contact-info .contact-method .contact-personal {
+  font-family: 'Varela Round', sans-serif;
+  color: #1C1D21;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-size: 4rem;
+  text-transform: lowercase;
+  margin-top: 2.4rem;
+}
+.contact .contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+.contact .contact-icons .contact-link {
+  color: #9197AE;
+  padding: 1rem;
+  transition: color 250ms ease-out;
+}
+.contact .contact-icons .contact-link:hover {
+  color: #2C365E;
+}
+.contact .contact-icons i {
+  font-size: 5rem;
 }
