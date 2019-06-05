@@ -228,6 +228,7 @@ body {
 .sidebar .sidebar-image {
   background: url(../images/sidebar-img.jpeg);
   background-size: cover;
+  background-position: center;
   width: 75%;
   height: 20%;
   margin: 2.4rem 0;
@@ -278,6 +279,11 @@ body {
   color: #2C365E;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+}
+@media (max-width: 800px) {
+  .main .about .about-name {
+    font-size: 7rem;
+  }
 }
 .main .about .about-job-title {
   font-family: 'Varela Round', sans-serif;
@@ -332,14 +338,15 @@ body {
   width: 95%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 7.2rem;
+  margin-top: 6.4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: #2C365E;
+  color: #1C1D21;
 }
 .skills .skills-items i {
   font-size: 12rem;
+  color: #1C1D21;
 }
 .skills .skills-items .skills-item {
   text-align: center;
