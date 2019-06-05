@@ -196,10 +196,19 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
+.subheader-font {
+  font-family: 'Varela Round', sans-serif;
+  color: #1C1D21;
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+  font-size: 2.5rem;
+}
 .main-section-layout {
   display: flex;
   flex-direction: column;
+  position: relative;
   background: #dfe7e6;
+  min-height: 100%;
   width: 80%;
   margin-left: 20%;
   padding: 6.4rem;
@@ -251,7 +260,9 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  position: relative;
   background: #dfe7e6;
+  min-height: 100%;
   width: 80%;
   margin-left: 20%;
   padding: 6.4rem;
@@ -301,10 +312,17 @@ body {
   color: white;
   cursor: pointer;
 }
+.section-header {
+  font-size: 7.5rem;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+}
 .skills {
   display: flex;
   flex-direction: column;
+  position: relative;
   background: #dfe7e6;
+  min-height: 100%;
   width: 80%;
   margin-left: 20%;
   padding: 6.4rem;
@@ -314,7 +332,7 @@ body {
   width: 95%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 7.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -334,10 +352,56 @@ body {
   margin-top: 3.2rem;
 }
 .skills .skills-items .skills-item-bottom {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
-.section-header {
-  font-size: 7.5rem;
+.work {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100%;
+  width: 80%;
+  margin-left: 20%;
+  padding: 6.4rem;
+  padding-top: 24px;
+}
+.work .work-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 3.2rem;
+  height: 75%;
+  width: 100%;
+}
+.work .work-history .work-card {
+  position: relative;
+  width: 100%;
+  margin: 3.2rem 0;
+  height: 12rem;
+  border-bottom: 1px solid black;
+}
+.work .work-history .work-card .employer-name {
+  color: #2C365E;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+.work .work-history .work-card .employer-name i {
+  margin-left: 2.4rem;
+}
+.work .work-history .work-card .employer-name .fa-google {
+  font-size: 3.8rem;
+}
+.work .work-history .work-card .work-title {
   font-family: 'Varela Round', sans-serif;
+  color: #1C1D21;
   text-transform: uppercase;
+  margin-top: 2.4rem;
+  font-size: 2.5rem;
+}
+.work .work-history .work-card .work-dates {
+  position: absolute;
+  font-size: 5rem;
+  right: 6.4rem;
+  bottom: 2.4rem;
 }
