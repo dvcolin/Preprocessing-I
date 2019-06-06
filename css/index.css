@@ -1,1 +1,715 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #dfe7e6;
+}
+/*************** VARIABLES ****************/
+/*************** MIXINS****************/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.nav-link-text {
+  font-size: 1.8rem;
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-decoration: none;
+  color: #9197ae;
+}
+.link-transition {
+  transition: color 250ms ease-out;
+}
+.header-font-style {
+  color: #2c365e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.subheader-font {
+  font-family: "Varela Round", sans-serif;
+  color: #1c1d21;
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .subheader-font {
+    font-size: 1.7rem;
+  }
+}
+.main-section-layout {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  padding: 3.6rem 4.8rem;
+  padding-right: 8.6rem;
+}
+@media (max-width: 500px) {
+  .main-section-layout {
+    width: 90%;
+    margin: 0 auto;
+    min-height: auto;
+    padding: 3.2rem;
+  }
+}
+.mobile-header {
+  color: #2c365e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+/*************** MOBILE NAVIGATION ****************/
+.mobile-nav {
+  display: none;
+}
+.mobile-nav .nav-link {
+  width: 75%;
+  font-size: 1.8rem;
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-decoration: none;
+  color: #9197ae;
+  transition: border-color 200ms ease-out;
+  transition: color 250ms ease-out;
+  text-align: center;
+  border-bottom: 1px solid #9197ae;
+  padding: 2rem;
+}
+.mobile-nav .nav-link:hover,
+.mobile-nav .nav-link:active {
+  color: #2c365e;
+  border-color: #2c365e;
+}
+@media (max-width: 500px) {
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.mobile-image {
+  display: none;
+  background: url(../images/sidebar-img.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 15rem;
+  margin: 0 auto;
+  margin-top: 3.6rem;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .mobile-image {
+    display: block;
+  }
+}
+/*************** SIDEBAR ****************/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #1c1d21;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  padding: 2.4rem;
+  height: 100%;
+  width: 20%;
+}
+.sidebar .sidebar-image {
+  background: url(../images/sidebar-img.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 75%;
+  height: 20%;
+  margin: 2.4rem 0;
+  border-radius: 50%;
+}
+.sidebar .sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  width: 60%;
+  margin-top: auto;
+}
+.sidebar .sidenav .nav-link {
+  font-size: 1.8rem;
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-decoration: none;
+  color: #9197ae;
+  transition: color 250ms ease-out;
+}
+.sidebar .sidenav .nav-link:hover,
+.sidebar .sidenav .nav-link:active {
+  color: white;
+}
+.sidebar .sidenav i.fa-github {
+  font-size: 4rem;
+}
+.sidebar .sidenav .active {
+  color: white;
+}
+@media (max-width: 500px) {
+  .sidebar {
+    display: none;
+  }
+}
+/*************** MAIN ****************/
+main {
+  /*************** SKILLS ****************/
+  /*************** WORK ****************/
+  /*************** CONTACT ****************/
+}
+main .about {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  padding: 3.6rem 4.8rem;
+  padding-right: 8.6rem;
+  /*************** ABOUT ****************/
+}
+@media (max-width: 500px) {
+  main .about {
+    width: 90%;
+    margin: 0 auto;
+    min-height: auto;
+    padding: 3.2rem;
+  }
+}
+main .about .about-name {
+  font-size: 11.5rem;
+  color: #2c365e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 800px) {
+  main .about .about-name {
+    font-size: 5rem;
+    margin: 0.8rem 0;
+  }
+}
+main .about .about-job-title {
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid #1c1d21;
+  color: #1c1d21;
+}
+@media (max-width: 500px) {
+  main .about .about-job-title {
+    font-size: 2.4rem;
+    padding: 1.6rem;
+    line-height: 3rem;
+  }
+  main .about .about-job-title .dash {
+    display: none;
+  }
+}
+main .about .about-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  width: 75%;
+  margin: 3rem 0;
+}
+@media (max-width: 500px) {
+  main .about .about-paragraph {
+    font-size: 1.6rem;
+    margin: 2.4rem auto;
+  }
+}
+main .about .about-button {
+  background: none;
+  padding: 1.8rem 3.6rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 1px solid #9197ae;
+  border-radius: 7px;
+  color: #9197ae;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  transition: color 250ms ease-out;
+  transition: background 200ms ease-out;
+}
+main .about .about-button:hover {
+  background: #2c365e;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  main .about .about-button {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  main .about {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  main .about {
+    text-align: center;
+  }
+}
+main .skills {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  padding: 3.6rem 4.8rem;
+  padding-right: 8.6rem;
+}
+@media (max-width: 500px) {
+  main .skills {
+    width: 90%;
+    margin: 0 auto;
+    min-height: auto;
+    padding: 3.2rem;
+  }
+}
+main .skills .skills-items {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 4.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #1c1d21;
+}
+main .skills .skills-items i {
+  font-size: 12rem;
+  color: #1c1d21;
+}
+@media (max-width: 500px) {
+  main .skills .skills-items i {
+    font-size: 5rem;
+  }
+}
+main .skills .skills-items .skills-item {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 6.4rem;
+}
+main .skills .skills-items .skills-item .skills-title {
+  font-size: 4.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 3.2rem;
+}
+@media (max-width: 500px) {
+  main .skills .skills-items .skills-item .skills-title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  main .skills .skills-items .skills-item {
+    width: 80%;
+    margin: 3.2rem 0;
+  }
+}
+@media (max-width: 500px) {
+  main .skills .skills-items {
+    margin-top: 1.6rem;
+  }
+}
+main .work {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  padding: 3.6rem 4.8rem;
+  padding-right: 8.6rem;
+}
+@media (max-width: 500px) {
+  main .work {
+    width: 90%;
+    margin: 0 auto;
+    min-height: auto;
+    padding: 3.2rem;
+  }
+}
+main .work .work-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 3.2rem;
+  height: 75%;
+  width: 100%;
+}
+main .work .work-history .work-card {
+  position: relative;
+  width: 100%;
+  margin: 3.2rem 0;
+  height: 12rem;
+  border-bottom: 1px solid #1c1d21;
+}
+main .work .work-history .work-card .employer-name {
+  color: #2c365e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  main .work .work-history .work-card .employer-name {
+    color: #2c365e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+}
+main .work .work-history .work-card .work-title {
+  font-family: "Varela Round", sans-serif;
+  color: #1c1d21;
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  main .work .work-history .work-card .work-title {
+    font-size: 1.7rem;
+  }
+}
+main .work .work-history .work-card .work-dates {
+  position: absolute;
+  font-size: 4rem;
+  right: 6.4rem;
+  bottom: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  main .work .work-history .work-card .work-dates {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  main .work .work-history .work-card {
+    margin: 2.4rem 0;
+  }
+}
+@media (max-width: 500px) {
+  main .work .work-history {
+    height: auto;
+    width: 100%;
+    margin: 3.2rem auto;
+    margin-top: 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  main .work .work-history {
+    margin-top: 4.8rem;
+  }
+}
+main .contact {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #dfe7e6;
+  min-height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  padding: 3.6rem 4.8rem;
+  padding-right: 8.6rem;
+}
+@media (max-width: 500px) {
+  main .contact {
+    width: 90%;
+    margin: 0 auto;
+    min-height: auto;
+    padding: 3.2rem;
+  }
+}
+main .contact .contact-info {
+  height: 75%;
+  margin-top: 6.4rem;
+}
+main .contact .contact-info .contact-method {
+  width: 100%;
+  height: 45%;
+  margin-bottom: 8.4rem;
+}
+main .contact .contact-info .contact-method .contact-type {
+  color: #2c365e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  main .contact .contact-info .contact-method .contact-type {
+    color: #2c365e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+}
+main .contact .contact-info .contact-method .contact-personal {
+  font-family: "Montserrat", sans-serif;
+  color: #1c1d21;
+  font-size: 4rem;
+  text-transform: lowercase;
+  margin-top: 2.4rem;
+  width: 100%;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  main .contact .contact-info .contact-method .contact-personal {
+    font-size: 2.2rem;
+  }
+}
+main .contact .contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+main .contact .contact-icons .contact-link {
+  color: #9197ae;
+  padding: 1rem;
+  transition: color 250ms ease-out;
+}
+main .contact .contact-icons .contact-link:hover {
+  color: #2c365e;
+}
+main .contact .contact-icons i {
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  main .contact .contact-icons i {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  main .contact .contact-icons {
+    width: 100%;
+    margin-bottom: 6.4rem;
+  }
+}
+main .section-header {
+  font-size: 6rem;
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  main .section-header {
+    font-size: 5rem;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 1.4rem;
+    border-bottom: 2px solid #1c1d21;
+    margin: 0 auto;
+  }
+}
+/*************** GENERAL ****************/
+hr {
+  margin: 0;
+}
