@@ -171,7 +171,7 @@ body {
 }
 
 .nav-link-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Varela Round", sans-serif;
   text-transform: uppercase;
   padding: 1rem;
@@ -205,10 +205,10 @@ body {
   .flex-column();
   position: relative;
   background: @bg-light;
-  min-height: 100%;
+  min-height: 100vh;
   width: 80%;
   margin-left: 20%;
-  padding: 4.8rem;
+  padding: 3.6rem 4.8rem;
   padding-right: 8.6rem;
 
   @media (max-width: 500px) {
@@ -327,7 +327,7 @@ main {
 
 	/*************** ABOUT ****************/
     .about-name {
-      font-size: 13rem;
+      font-size: 11.5rem;
       .header-font-style();
 
       @media (max-width: 800px) {
@@ -339,9 +339,8 @@ main {
     .about-job-title {
       font-family: "Varela Round", sans-serif;
       text-transform: uppercase;
-      font-size: 3.6rem;
-	  padding-top: 4rem;
-	  padding-bottom: 2rem;
+      font-size: 3rem;
+	  padding: 2rem 0;
       border-bottom: 2px solid @text-dark;
       color: @text-dark;
 
@@ -358,10 +357,10 @@ main {
 
     .about-paragraph {
       font-family: "Montserrat", sans-serif;
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       line-height: 3rem;
       width: 75%;
-      margin: 2.4rem 0;
+      margin: 3rem 0;
 
       @media (max-width: 500px) {
         font-size: 1.6rem;
@@ -378,7 +377,8 @@ main {
       border: 1px solid @nav-gray;
       border-radius: 7px;
       color: @nav-gray;
-	  margin: 1.2rem 0;
+	  margin-top: 1rem;
+	  margin-bottom: 0;
       .link-transition();
       transition: background 200ms ease-out;
 
